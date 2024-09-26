@@ -63,8 +63,8 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
-            // const response = await axios.post(`${BASE_URL}/api/contact`, formData);
+            // const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post(`${BASE_URL}/api/contact`, formData);
 
             // console.log('Form submitted:', response.data);
             setShowSuccessPopup(true);
