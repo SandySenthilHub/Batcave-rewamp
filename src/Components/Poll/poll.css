@@ -1,0 +1,121 @@
+.poll-container {
+    overflow: hidden;
+}
+
+.polllogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+}
+
+.poll-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.poll-content .Question {
+    font-family: "Built Titling";
+    font-size: 42px;
+    letter-spacing: 2.2px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.poll-content .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 56px;
+    width: 700px;
+    list-style: none;
+
+
+}
+
+/* .poll-content .options button {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 24px;
+    text-transform: uppercase;
+    width: 253px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.08);
+
+
+    
+} */
+
+.options button {
+    height: 52px;
+    display: block;
+    width: 253px;
+    padding: 8px 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: "Outfit";
+    /* font-size: 16px; */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+
+
+  
+  }
+
+.poll-btn {
+    margin-top: 56px;
+}
+
+ .progress-poll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #007AFF;
+    transition: width 1s ease;
+    z-index: -1;
+  }
+
+  .percentage {
+    text-align: end;
+  
+  }
+
+@media screen and (max-width:768px) {
+
+    .poll-content .Question {
+        font-size: 28px;
+
+    }
+
+    .poll-content {
+        margin: 0 24px;
+    }
+
+    .poll-content .options {
+
+        flex-direction: column;
+        width: auto;
+    }
+
+}

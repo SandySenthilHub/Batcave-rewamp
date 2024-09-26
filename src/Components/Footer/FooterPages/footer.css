@@ -1,0 +1,441 @@
+.footer-span span {
+   cursor: pointer;
+}
+
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   color: #666666;
+   margin: 86px 85px 46px 144px;
+   text-transform: uppercase;
+   font-size: 14px;
+   /* padding-bottom: 50px; */
+
+}
+
+.footer-span {
+   display: flex;
+}
+
+
+/* FAQ */
+
+.faq-container {
+   margin: 144px 45px 85px 85px;
+}
+
+.faq-title {
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 42px;
+   font-family: "BuiltTitling";
+   margin: 36px 0;
+   font-weight: 600;
+   letter-spacing: 2.2px
+}
+
+.faq-qna {
+   /* display: flex; */
+   font-size: 14px;
+   color: #fff;
+}
+
+.faq-que ol div {
+   display: flex;
+   gap: 60px;
+
+}
+
+.faq-que ol div li:first-child {
+
+   width: 242px;
+
+}
+
+.faq-que ol div div {
+
+   color: rgba(255, 255, 255, 0.6);
+}
+
+ol {
+   padding: 0 0 0 14px;
+}
+
+
+
+.faq-qna li {
+   margin-bottom: 36px;
+   height: 44px;
+}
+
+.faq-ans li {
+   list-style: none;
+   color: rgba(256, 256, 256, 0.6);
+
+}
+
+
+/* Refund */
+
+.refund-content {
+   color: #999999;
+}
+
+.refund-content div {
+   margin-bottom: 36px;
+}
+
+.refund-updated {
+   color: #fff;
+}
+
+.refund-flex {
+   display: flex;
+   gap: 30px;
+}
+
+/* .margincss1{
+   margin-left: -90px;
+} */
+
+
+a {
+   color: #999999;
+   text-decoration: none;
+}
+
+.refund-head {
+   color: #fff;
+   width: 420px;
+}
+
+.cnr {
+   width: 327px;
+}
+
+.giftes {
+   width: 317px;
+}
+
+.contactUs {
+   width: 238px;
+}
+
+/* t&c */
+
+.TermsContainer {
+   color: #999999;
+   font-family: "Outfit";
+   margin: 124px 45px 85px 85px;
+
+}
+
+.TermsContent {
+   margin-top: 34px;
+   font-size: 14px;
+}
+
+.TermsContent div {
+   line-height: 24px;
+   margin-bottom: 24px;
+}
+
+.TermsContent div:first-child {
+   font-family: "Built Titling";
+   font-weight: 400;
+   font-size: 42px;
+   color: #fff;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.TermsContent ul {
+   margin-left: 25px;
+}
+
+.TermsContent div:nth-child(3),
+.TermsContent div:nth-child(5),
+.TermsContent div:nth-child(7),
+.TermsContent div:nth-child(9),
+.TermsContent div:nth-child(12),
+.TermsContent div:nth-child(14),
+.TermsContent div:nth-child(17),
+.TermsContent div:nth-child(25),
+.TermsContent div:nth-child(37),
+.TermsContent div:nth-child(39),
+.TermsContent div:nth-child(41),
+.TermsContent div:nth-child(43),
+.TermsContent div:nth-child(46) {
+   color: #E0E0E0;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+
+
+   .TermsContent {
+      /* margin-top: 50px !important; */
+      margin-bottom: 0px !important;
+
+   }
+
+   .TermsContent ul li {
+      width: 90%;
+   }
+
+   .TermsContainer {
+          margin: 124px 45px 24px 24px;
+
+   }
+
+   .TermsContent div:first-child {
+
+      font-size: 34px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .footer-container {
+      margin: 24px;
+      display: block;
+      font-size: 12px;
+      text-transform: none;
+      text-align: center;
+   }
+
+   .tncSpan {
+      display: none;
+   }
+
+   .footer-span {
+      margin-top: 12px;
+      text-align: center;
+      line-height: 34px;
+      display: block;
+   }
+
+
+   /* faq */
+
+   .faq-container {
+      margin: 144px 24px 85px 24px;
+   }
+
+   .faq-que ol div {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 18px;
+      text-align: justify;
+   }
+
+   .faq-qna li {
+      margin-bottom: 12px;
+      height: auto;
+
+
+   }
+
+   .faq-que ol div li:first-child {
+
+      width: auto;
+
+   }
+
+   .faq-title {
+      font-size: 36px;
+   }
+
+   /* refund policy */
+
+   .refund-flex {
+      flex-direction: column;
+      gap: 0;
+   }
+
+   .refund-content {
+      font-size: 14px;
+      line-height: 25px;
+   }
+
+   .margincss1 {
+      margin-left: 0px;
+   }
+
+}
+
+/* PrivacyPolicy */
+
+
+.PrivacyContainer {
+   color: #999999;
+   font-family: "Outfit";
+   margin: 124px 45px 85px 85px;
+
+
+}
+
+.PrivacyContent{
+   margin-top: 34px;
+}
+
+.PrivacyContent div {
+   line-height: 24px;
+   margin-bottom: 24px;
+}
+
+.PrivacyContent ul {
+   margin-left: 25px;
+}
+
+.PrivacyContent div:first-child {
+   font-family: "Built Titling";
+   font-weight: 400;
+   font-size: 42px;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.PrivacyContent div:nth-child(2),
+.PrivacyContent div:nth-child(5),
+.PrivacyContent div:nth-child(6),
+.PrivacyContent div:nth-child(8),
+.PrivacyContent div:nth-child(11),
+.PrivacyContent div:nth-child(16),
+.PrivacyContent div:nth-child(21),
+.PrivacyContent div:nth-child(26),
+.PrivacyContent div:nth-child(33),
+.PrivacyContent div:nth-child(38),
+.PrivacyContent div:nth-child(41),
+.PrivacyContent div:nth-child(45),
+.PrivacyContent div:nth-child(53),
+.PrivacyContent div:nth-child(55),
+.PrivacyContent div:nth-child(50),
+.PrivacyContent div:nth-child(51),
+.PrivacyContent div:nth-child(58),
+.PrivacyContent div:nth-child(60),
+.PrivacyContent div:nth-child(63),
+.PrivacyContent div:nth-child(66),
+.PrivacyContent div:nth-child(70),
+.PrivacyContent div:nth-child(13) 
+{
+   color: #E0E0E0;
+}
+
+li b{
+   color: #fff;
+   font-weight: 400;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+
+.PrivacyContainer{
+   margin: 124px 45px 24px 24px;
+
+}
+
+.PrivacyContent div:first-child {
+font-size: 36px;
+}
+
+.PrivacyContent ul li{
+   width: 90%;
+}
+
+.Footer .row .col-lg-6{
+   padding: 0 !important;
+   text-align: center;
+}
+.Footer .row{
+   margin: 15px 0 !important;
+}
+.Footer{
+   height: 50px;
+
+   /* padding: 0 !important; */
+
+}
+
+.container-fluid{
+   padding: 0 !important;
+}
+
+}
+
+/*  */
+
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+   .footer-container {
+      margin: 80px;
+      font-size: 12px;
+      text-transform: none;
+      align-items: center;
+      flex-direction: column;
+
+   }
+
+   .footer-span {
+      line-height: 34px;
+   }
+
+
+   /* faq */
+
+   .faq-container {
+      margin: 144px 24px 85px 24px;
+   }
+
+   .faq-que ol div {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 18px;
+      text-align: justify;
+   }
+
+   .faq-qna li {
+      margin-bottom: 12px;
+      height: auto;
+
+
+   }
+
+   .faq-que ol div li:first-child {
+
+      width: auto;
+
+   }
+
+   .faq-title {
+      font-size: 36px;
+   }
+
+   /* refund policy */
+
+   .refund-flex {
+      flex-direction: column;
+      gap: 0;
+   }
+
+   .refund-content {
+      font-size: 14px;
+      line-height: 25px;
+   }
+
+   .margincss1 {
+      margin-left: 0px;
+   }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+
+   .footer-container {
+      margin: 86px 85px 46px 144px;
+      font-size: 14px;
+      text-transform: none;
+      align-items: baseline;
+
+   }
+}

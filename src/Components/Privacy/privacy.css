@@ -1,0 +1,90 @@
+.PrivacyContainer {
+    /* border: 2px solid white; */
+    color: #999999;
+    font-family: "Outfit";
+    /* margin-top: 50px; */
+
+
+}
+
+.PrivacyContent div {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.PrivacyContent ul {
+    margin-left: 25px;
+}
+
+.PrivacyContent div:first-child {
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.PrivacyContent div:nth-child(2),
+.PrivacyContent div:nth-child(5),
+.PrivacyContent div:nth-child(6),
+.PrivacyContent div:nth-child(8),
+.PrivacyContent div:nth-child(11),
+.PrivacyContent div:nth-child(16),
+.PrivacyContent div:nth-child(21),
+.PrivacyContent div:nth-child(26),
+.PrivacyContent div:nth-child(33),
+.PrivacyContent div:nth-child(38),
+.PrivacyContent div:nth-child(41),
+.PrivacyContent div:nth-child(45),
+.PrivacyContent div:nth-child(53),
+.PrivacyContent div:nth-child(55),
+.PrivacyContent div:nth-child(50),
+.PrivacyContent div:nth-child(51),
+.PrivacyContent div:nth-child(58),
+.PrivacyContent div:nth-child(60),
+.PrivacyContent div:nth-child(63),
+.PrivacyContent div:nth-child(66),
+.PrivacyContent div:nth-child(70),
+.PrivacyContent div:nth-child(13) 
+{
+    color: #E0E0E0;
+}
+
+li b{
+    color: #fff;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+/* .container-fluid .row{ */
+    .PrivacyContent{
+    /* margin-top: 50px !important; */
+    /* margin-bottom: 150px !important; */
+    /* margin: 20px 0; */
+    padding: 24px !important;
+}
+
+.PrivacyContent ul li{
+    width: 90%;
+}
+
+.Footer .row .col-lg-6{
+    padding: 0 !important;
+    text-align: center;
+}
+.Footer .row{
+    margin: 15px 0 !important;
+}
+.Footer{
+    height: 50px;
+
+    /* padding: 0 !important; */
+
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+}

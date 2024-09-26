@@ -1,0 +1,13 @@
+/* CustomCursor.css */
+.custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #171616;
+    border-radius: 50%;
+    border: 0.5px solid #999999 ;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  

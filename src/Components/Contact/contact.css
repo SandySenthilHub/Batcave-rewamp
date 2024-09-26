@@ -1,0 +1,357 @@
+.Contact-container {
+    display: flex;
+    height: 100vh;
+    margin: 106px 80px 0 140px;
+}
+
+.Contact-right-container {
+    width: 100%;
+    margin-top: 42px;
+}
+
+.contact-title,
+.info-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 64px;
+    font-family: "BuiltTitling";
+    margin-bottom: -5px;
+    height: 77px;
+    font-weight: 600;
+    letter-spacing: 2.2px
+}
+
+.contact-image-container {
+    display: flex;
+    margin-top: -18px;
+    flex-direction: column;
+}
+
+.contact1-container {
+    margin: -242px 0 0 -115px;
+}
+
+.contact2-container {
+    margin: -193px 0 0 -32px;
+}
+
+.contact3-container {
+    margin: -159.1px 0 0 -47px;
+}
+
+.DiRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.form-row {
+    position: relative;
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+.form-row label {
+    position: absolute;
+    left: 0px;
+    top: -4px;
+    transition: top 0.3s, font-size 0.3s;
+    font-size: 14px;
+    color: #999999;
+    pointer-events: none;
+}
+
+.form-row input:focus~label,
+.form-row select:focus~label {
+    top: -16px;
+    font-size: 12px;
+    /* color: #333; */
+}
+
+
+.form-row select,
+.form-row input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 0.6px solid #363636;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+
+}
+
+.form-row select {
+    outline: none;
+
+}
+
+.form-row select option {
+    font-size: 14px;
+}
+
+
+
+/* Additional styles */
+.focused {
+    top: -16px !important;
+    font-size: 12px !important;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.contact-btn img {
+    margin-left: 20px;
+    z-index: 1;
+}
+
+
+.contact-info {
+    margin: 0px 85px 0 140px;
+
+}
+
+.info-content-title {
+
+    font-size: 16px;
+    color: #CCCCCC;
+    margin: 32px 0;
+
+}
+
+.info-enquiry {
+    font-size: 16px;
+    color: #666666;
+    display: flex;
+}
+
+.socialIcons {
+    color: #CCCCCC;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.other-actions {
+    display: flex;
+    color: #CCCCCC;
+    margin-top: 32px;
+    gap: 18px;
+
+}
+
+.other-actions div:first-child {
+    color: #666666;
+}
+
+.other-actions div:nth-child(3),
+.other-actions div:nth-child(5) {
+
+    text-decoration: underline;
+}
+
+
+.form-row select option {
+    color: #999999;
+    margin-bottom: 20px;
+    background-color: #17191B;
+    margin-bottom: 20px;
+}
+
+
+
+.form-row select {
+    cursor: pointer;
+}
+
+.contact-success-popup {
+    width: 700px;
+    height: 310px;
+    border: 0.2px solid #fff;
+    border-radius: 32px;
+    background-color: #17191B;
+    display: flex;
+    background-image: url('../assets/contact-shine.svg');
+}
+
+.contact-success-content {
+    margin: 67px 0 67px 36px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.contact-success-content div:first-child {
+
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-family: "BuiltTitling";
+    margin-bottom: -5px;
+    height: 77px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+}
+
+.contact-success-content div:nth-child(2) {
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent dark background */
+    backdrop-filter: blur(5px);
+    /* Blur effect */
+    z-index: 999;
+    /* Ensure it is above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-enquiry span {
+    margin: 0 15px;
+}
+
+.contact-success-popup {
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.contact-success-cancel {
+    text-align: end;
+    margin: 10px 30px 0 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-success-cancel-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .Contact-container {
+        display: block;
+        margin: 0;
+    }
+
+    .contact-title {
+        font-size: 36px;
+    }
+
+    .info-title {
+        font-size: 36px;
+        margin-top: 112px;
+
+
+    }
+
+    .Contact-left-container {
+        display: flex;
+        gap: 0px;
+        margin: 0 0 0 24px;
+        justify-content: space-between;
+    }
+
+    .Contact-right-container {
+        margin: 0 24px;
+        width: auto;
+    }
+
+    .Contact-right-container .DiRow {
+        display: block;
+    }
+
+    .contact-btn {
+        justify-content: start;
+    }
+
+    .contact-info {
+        margin: 44px 24px 24px 24px;
+    }
+
+    .info-enquiry span {
+        display: none;
+    }
+
+    .info-enquiry {
+        line-height: 55px;
+        width: 258px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .socialIcons {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .socialIcons span {
+        display: none;
+    }
+
+
+    .other-actions span {
+        display: none;
+
+    }
+
+    /* success */
+
+    .contact-success-popup {
+        width: 300px;
+        height: 594px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-success-content {
+        margin: 67px 24px 24px 24px;
+    }
+
+    .contact-success-cancel-mobile {
+        text-align: end;
+        margin: 16px 30px 0 0;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+    .contact-success-cancel {
+        display: none;
+    }
+
+    .contact-success-content div:first-child{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+
+    .contact-title, .info-title{
+        font-size: 34px;
+
+    }
+
+    .Contact-container {
+    
+        margin: 106px 80px 0 80px;
+    }
+
+    .contact-info {
+        margin: 0px 85px 0 80px;
+    }
+}

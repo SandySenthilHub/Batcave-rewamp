@@ -1,0 +1,176 @@
+/* Xcelerators */
+
+.xcelerator-form-container {
+    margin: 137px 80px;
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+.xcelerator-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xcelerator-header div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Upgrade-content {
+    text-decoration: underline;
+}
+
+.xcelerator-header div:first-child span:first-child {
+    margin: 0 10px;
+}
+
+.xceleratorm-form {
+    margin-top: 56px;
+    display: flex;
+    gap: 42px;
+
+}
+
+.xceleratorm-form-left {
+    padding: 46px 36px 0 36px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 60%;
+
+}
+
+.xceleratorm-form-right {
+    padding: 46px 36px 0 36px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40%;
+    color: #666666;
+    background-image: url('../../assets/XR-form-bg.png');
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.checkout-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Cfirst {
+    font-size: 16px;
+    margin: 32px 0;
+}
+
+.checkoutSummary {
+    color: #CCCCCC;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.Csecond {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.Cthird {
+    font-size: 14px;
+
+}
+
+.endline {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 24px 0;
+}
+
+.Ctotal {
+    color: #CCCCCC;
+    font-size: 14PX;
+}
+
+.Checkout-terms {
+    display: flex;
+    margin: 32px 0;
+    gap: 30px;
+
+}
+
+.terms-policy {
+    font-size: 12px;
+}
+
+
+/* Ignition form */
+
+
+.ignition-form {
+    padding: 46px 36px 36px 36px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 56px;
+    background-image: url('../../assets/II-form-bg.png');
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Checkout-terms-ii {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* Xcelerators */
+
+    .xceleratorm-form {
+        flex-direction: column;
+    }
+
+    .xcelerator-form-container {
+        margin: 137px 24px 100px 24px;
+
+    }
+
+    .xcelerator-header {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .Checkout-terms-ii {
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    .xceleratorm-form-left .DiRow {
+        flex-direction: column;
+    }
+
+    .xceleratorm-form .xceleratorm-form-right {
+        padding: 4px;
+    }
+
+    /* Ignition */
+
+    .ignition-form .DiRow {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1439px) {
+
+    .xceleratorm-form {
+        flex-direction: column;
+    }
+
+    .xceleratorm-form-left .DiRow {
+        flex-direction: row;
+    }
+
+    .xceleratorm-form-right,
+    .xceleratorm-form-left {
+        width: auto;
+    }
+}

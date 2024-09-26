@@ -1,0 +1,649 @@
+.custom-toast {
+    background: linear-gradient(270deg, rgba(26, 171, 255, 0) 0%, rgba(26, 171, 255, 0.06) 24.5%, rgba(26, 171, 255, 0.4) 100%) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: "Outfit";
+    z-index: 2;
+}
+
+
+.EventsSection {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+
+}
+
+.event-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 64px;
+    font-family: "BuiltTitling";
+    margin-bottom: -5px;
+    font-weight: 600;
+    letter-spacing: 2.2px
+}
+
+.Ticket-component {
+
+    width: 40%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+
+.ticket-1 {
+    z-index: 2;
+    position: relative;
+
+}
+
+.ticket-2 {
+    z-index: 1;
+    position: relative;
+}
+
+.ticket-2 img {
+    margin-top: -220px;
+    margin-left: 24px;
+
+}
+
+.event-container {
+    display: flex;
+    margin-left: 144px;
+    height: 500px;
+}
+
+.event-container.show {
+    margin-left: 144px;
+}
+
+.left-event-logos,
+.right-event-logos {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.left-event-logos.show,
+.right-event-logos.show,
+.Zonal-Meetup.show {
+    opacity: 1;
+}
+
+
+
+
+
+.event-logo-title {
+    color: #999999;
+    font-family: "Outfit";
+    font-size: 18px;
+    margin-bottom: 12px;
+
+}
+
+.Regional-meet {
+    margin-left: 195px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.Track-Event {
+    margin: 74px 0px 54px 121px;
+}
+
+.Off-Roading {
+    margin: 0 0 26px 210px;
+
+}
+
+
+
+.Road-Trip {
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+.Intercity-Meet {
+    /* margin: 44px 0; */
+    margin-top: 44px;
+    margin-bottom: 44px;
+    margin-left: 134px;
+
+}
+
+.Rally {
+    margin-left: 86px;
+    margin-top: 23px;
+
+}
+
+.event-footer {
+    color: #fff;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -80px; */
+
+}
+
+.Zonal-Meetup {
+    margin: -22px 0 0 637.3px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.event-btn {
+    margin: -66px 0 0 532px;
+}
+
+.Regional-meet .event-pointer {
+    flex-direction: row-reverse;
+}
+
+.event-pointer {
+    display: flex;
+    gap: 20px;
+}
+
+/* Mobile screen */
+
+@media screen and (max-width:768px) {
+
+    .event-title {
+        font-size: 36px;
+
+    }
+
+    .event-container {
+        margin-left: 0px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .event-logo-title {
+
+        font-size: 10px;
+        margin-bottom: 0;
+
+    }
+
+    .event-pointer {
+        gap: 2px;
+    }
+
+
+    .Regional-meet .event-pointer img {
+        width: 22px;
+        height: 8px;
+    }
+
+
+
+    .Regional-meet img,
+    .Track-Event img,
+    .Off-Roading img,
+    .Road-Trip img,
+    .Intercity-Meet img,
+    .Rally img {
+
+        height: 19px;
+        width: 42px;
+    }
+
+    .Zonal-Meetup img {
+        height: 16px;
+        width: 62px;
+    }
+
+
+    .Regional-meet {
+
+        margin: 0 -16px -53px 167px;
+        width: 62px;
+
+
+    }
+
+    .Regional-meet .event-pointer {
+        margin-left: -26px;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .Regional-meet .event-pointer img {
+        transform: rotate(322deg);
+        margin-top: 10px;
+        width: 22px;
+        height: 8px;
+
+    }
+
+    .Track-Event {
+        margin: 108px 138px -109px -35px;
+    }
+
+    .Off-Roading {
+        margin: 0px 0 29px 29px;
+    }
+
+    .Off-Roading .event-pointer img {
+        transform: rotate(221deg);
+        margin-top: 5px;
+        width: 22px;
+        height: 8px;
+    }
+
+    .Track-Event .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+    }
+
+    .Intercity-Meet .event-pointer img:first-child {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+    .Zonal-Meetup .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+
+    .Rally .event-pointer img:first-child {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+    .Road-Trip {
+        margin: -274px 88px 0px 213px;
+        width: 90px;
+
+    }
+
+    .Road-Trip .event-pointer img:first-child {
+        transform: rotate(4deg);
+        width: 22px;
+        height: 8px;
+
+    }
+
+    .Intercity-Meet {
+
+        margin: 124px 21px 46px 178px;
+
+    }
+
+    .Rally {
+
+        margin: -40px 0 -62px 109px;
+
+    }
+
+    .Zonal-Meetup {
+
+        margin: -161px -73px 207px 144px;
+        width: 150px;
+
+    }
+
+    .event-btn {
+        margin: -141px 0 0 0;
+    }
+
+
+    .left-event-logos.show,
+    .right-event-logos.show,
+    .Zonal-Meetup.show {
+        opacity: 1;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .event-title {
+        font-size: 36px;
+
+    }
+
+    .event-container {
+        margin-left: 0px !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .event-logo-title {
+
+        font-size: 12px;
+        margin-bottom: 0;
+
+    }
+
+    .event-pointer {
+        gap: 2px;
+    }
+
+
+    .Regional-meet .event-pointer img {
+        width: 22px;
+        height: 8px;
+    }
+
+
+
+    .Regional-meet img,
+    .Track-Event img,
+    .Off-Roading img,
+    .Road-Trip img,
+    .Intercity-Meet img,
+    .Rally img {
+
+        height: 24px;
+        width: 48px;
+    }
+
+    .Zonal-Meetup img {
+        height: 16px;
+        width: 62px;
+    }
+
+
+    .Regional-meet {
+
+        margin: 0 -16px -65px 236px;
+        width: 62px;
+
+
+    }
+
+    .Regional-meet .event-pointer {
+        margin-left: -22px;
+        width: 100px;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .Regional-meet .event-pointer img {
+        transform: rotate(322deg);
+        margin-top: 10px;
+        width: 22px;
+        height: 8px;
+
+    }
+
+    .Track-Event {
+        margin: 105px 138px -89px -34px;
+    }
+
+    .Off-Roading {
+        margin: -27px 0 30px 71px;
+    }
+
+    .Off-Roading .event-pointer img {
+        transform: rotate(221deg);
+        margin-top: 5px;
+        width: 22px;
+        height: 8px;
+    }
+
+    .Track-Event .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+    }
+
+    .Intercity-Meet .event-pointer img:first-child {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+    .Zonal-Meetup .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+
+    .Rally .event-pointer img:first-child {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+    .Road-Trip {
+        margin: -278px 0px 5px 323px;
+        width: 90px;
+
+    }
+
+    .Road-Trip .event-pointer img:first-child {
+        transform: rotate(4deg);
+        width: 22px;
+        height: 8px;
+
+    }
+
+    .Intercity-Meet {
+
+        margin: 154px -31px 46px 273px;
+
+    }
+
+    .Rally {
+
+        margin: -20px 0 -62px 163px;
+
+    }
+
+    .Zonal-Meetup {
+
+        margin: -83.9px -130px 207px 14px;
+        width: 150px;
+
+    }
+
+    .event-btn {
+        margin: -141px 0 0 0;
+    }
+
+
+    .left-event-logos.show,
+    .right-event-logos.show,
+    .Zonal-Meetup.show {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+}
+
+/* Laptop */
+
+@media screen and (min-width:1025px) and (max-width:1439px) {
+
+    .EventsSection {
+        margin-top: 60px;
+    }
+
+    .event-title {
+        margin-bottom: -107px;
+    }
+
+    .event-container {
+        margin-left: -183px !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-container .show {
+        /* margin-left: -110px !important; */
+
+    }
+
+    .event-logo-title {
+
+        font-size: 13px;
+        margin-bottom: 8.13px;
+
+    }
+
+    .event-pointer {
+        gap: 10px;
+    }
+
+
+    .Regional-meet .event-pointer {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .Regional-meet img,
+    .Track-Event img,
+    .Off-Roading img,
+    .Road-Trip img,
+    .Intercity-Meet img,
+    .Rally img {
+
+        height: 25px;
+        width: 64px;
+    }
+
+    .Zonal-Meetup img {
+        height: 25px;
+        width: 64px;
+    }
+
+
+
+    .Road-Trip {
+        margin-left: 44px;
+        margin-top: 50px;
+    }
+
+    .Intercity-Meet {
+        margin-top: 44px;
+        margin-bottom: 44px;
+        margin-left: 64px;
+    }
+
+    .Rally {
+        margin-left: -40px;
+        margin-top: 0px;
+        margin-bottom: 57px;
+    }
+
+    .Track-Event {
+        margin: 0px 0px 62px 163px;
+    }
+
+    .Zonal-Meetup {
+        margin: -121px 0 33px 163.3px;
+    }
+
+    .event-btn {
+        margin: -61px 0 0 356.9px;
+    }
+
+
+    .Regional-meet {
+        margin-left: 209px;
+        margin-right: -36px;
+        margin-top: 0;
+        margin-bottom: 42px;
+
+    }
+
+    .Regional-meet .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+        margin-top: 10px;
+
+    }
+
+
+
+    .Off-Roading .event-pointer img {
+        margin-top: 10px;
+        width: 22px;
+        height: 8px;
+    }
+
+    .Track-Event .event-pointer img {
+        margin-top: 10px;
+        width: 22px;
+        height: 8px;
+    }
+
+    .Intercity-Meet .event-pointer img:first-child {
+
+        width: 22px;
+        margin-top: 10px;
+        height: 8px;
+    }
+
+
+    .Zonal-Meetup .event-pointer img {
+
+        width: 22px;
+        height: 8px;
+        margin-top: 10px;
+
+    }
+
+
+
+    .Rally .event-pointer img:first-child {
+
+        width: 22px;
+        height: 8px;
+    }
+
+
+
+
+    .Road-Trip .event-pointer img:first-child {
+        width: 22px;
+        height: 8px;
+        margin-top: 10px;
+
+
+    }
+
+
+}

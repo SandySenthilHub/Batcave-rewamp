@@ -1,0 +1,55 @@
+.TermsContainer {
+    color: #999999;
+    font-family: "Outfit";
+}
+
+.TermsContent div {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.TermsContent div:first-child {
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.TermsContent ul {
+    margin-left: 25px;
+}
+
+.TermsContent div:nth-child(3),
+.TermsContent div:nth-child(5),
+.TermsContent div:nth-child(7),
+.TermsContent div:nth-child(9),
+.TermsContent div:nth-child(12),
+.TermsContent div:nth-child(14),
+.TermsContent div:nth-child(17),
+.TermsContent div:nth-child(25),
+.TermsContent div:nth-child(37),
+.TermsContent div:nth-child(39),
+.TermsContent div:nth-child(41),
+.TermsContent div:nth-child(43),
+.TermsContent div:nth-child(46)
+{
+    color: #E0E0E0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+ 
+
+    .TermsContent {
+        /* margin-top: 50px !important; */
+        margin-bottom: 0px !important;
+        padding: 0 24px !important;
+
+    }
+
+    .TermsContent ul li{
+        width: 90%;
+    }
+}

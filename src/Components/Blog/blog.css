@@ -1,0 +1,304 @@
+.blog-container {
+    margin: 145px 80px 136px 136px;
+}
+
+.mobilePagination{
+    visibility: hidden;
+}
+
+.Blogs {
+    font-family: "Outfit";
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 32px;
+
+}
+
+.blognav div:first-child {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.blognav div:nth-child(2) {
+    display: flex;
+    gap: 12px;
+}
+
+.blognav {
+    justify-content: space-between;
+}
+
+
+
+.blogContainer {
+    width: 226px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+
+}
+
+.blogContainer img:first-child {
+    height: 240px;
+    width: 100%;
+}
+
+.blogContainer .blogdate {
+    color: #CCCCCC;
+    font-size: 10px;
+}
+
+.blogContainer .title {
+    color: #CCCCCC;
+    font-size: 12px;
+    margin: 0;
+}
+
+.blogContainer .titlehead {
+
+    padding: 5px 14px;
+    height: 66px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogPagination .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 80px;
+    color: #EFEFEF;
+}
+
+.blogPagination .pagination div {
+    display: flex;
+}
+
+.pageControl {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pageControl[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pageNumbers {
+    display: flex;
+    gap: 5px;
+   
+}
+
+.pageNumber {
+    margin: 0 5px;
+    padding: 12px 18px;
+    cursor: pointer;
+    background-color: none;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.pageNumber.active {
+    background-color: #1AABFF;
+    color: black;
+}
+
+.al {
+    margin: 0 10px;
+}
+
+.BlogCon {
+    margin: 124px 80px;
+}
+
+.BlogCon {
+    font-family: "Outfit";
+}
+
+.blog-content-container {
+    display: flex;
+    gap: 52px;
+    height: 540px;
+    margin-top: 30px;
+}
+
+.blog-content-container div:nth-child(2){
+    overflow: scroll;
+
+}
+
+.blogdate, .blogAuthor {
+    color: #999999;
+    font-size: 18px;
+    margin: 6px 0;
+    font-weight: 400;
+}
+
+.blogContent h2 p {
+    margin: 0;
+}
+
+.blogTitle {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-family: "Built Titling";
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+
+}
+
+.blogDetailsImg {
+    width: 406px;
+    height: 540px;
+    overflow: hidden;
+
+}
+
+.blogContent p{
+    text-align: justify;
+    margin: 0;
+}
+
+.blogContent {
+    color: #C0C5D0;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.blogFooter #HomeFooter {
+    margin-top: 100px !important;
+}
+
+#blogPagination {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 52px;
+}
+
+#blogPaginationWeb .pagination {
+    margin: 0;
+}
+
+
+#blogPaginationWeb{
+    margin-right: 60px;
+}
+
+#blogPaginationWeb .page-right-bar,
+#blogPaginationWeb .page-left-bar
+
+{
+    transform: none;
+}
+
+
+#blogPagination .pagination {
+    margin: 0;
+}
+
+.blogContainer .keyword,
+.BlogCon .keyword  {
+    display: flex;
+    gap: 8px;
+}
+
+.blogContainer .keyword h3,
+.BlogCon .keyword h3 {
+
+    font-size: 14px;
+    background-color: rgba(253, 242, 250, 0.1);
+    border-radius: 3px;
+    color:#1AABFF;
+    padding: 10px 12px;
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .blog-container {
+        margin: 0 24px 136px 24px;
+    }
+
+    .blogContainer {
+        width: 147px;
+        height: 196px;
+
+    }
+
+    .mobilePagination{
+        visibility: visible;
+    }
+
+    .WebPagination{
+        visibility: hidden;
+        display: none;
+    }
+
+    .Blogs {
+        gap: 16.24px;
+    }
+
+    .blogContainer .title {
+        font-size: 10px;
+    }
+
+    .blogContainer .blogdate {
+        font-size: 6.5px;
+    }
+
+    .blogContainer .titlehead {
+        height: 55px;
+    }
+
+    .blogContainer img:first-child {
+        width: 250px;
+    }
+
+    .pageNumber {
+        padding: 5px 10px;
+    }
+
+    .BlogCon {
+        margin: 124px 24px;
+    }
+
+    .blogDetailsImg {
+        width: 312px;
+        height: 414px;
+    }
+
+    .blog-content-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blogTitle{
+        font-size: 32px;
+    }
+
+    .blogdate, .blogAuthor{
+        font-size: 14px;
+    }
+
+    .blogContent p{
+        text-align: justify;
+        font-size: 14px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width:1440px) {}

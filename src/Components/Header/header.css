@@ -1,0 +1,185 @@
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 4;
+    background-image: url('../assets/BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 36px 0px 36px;
+}
+
+.logo img {
+    height: 24px;
+    width: 142px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes moveIcon {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.music-logo {
+
+    margin-right: 42px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.music-logo.moving {
+    animation: moveIcon 1s infinite;
+}
+
+.music-logo-phone {
+    display: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.music-logo-phone.moving {
+    animation: moveIcon 1s infinite;
+}
+
+.menu-icon {
+
+    display: none;
+
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.blur-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Side menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-image: url('../assets/BG.png');
+    color: rgba(153, 153, 153, 1);
+    padding: 40px 24px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-menu.active {
+    transform: translateX(0);
+}
+
+/* Close button inside the side menu */
+.side-menu .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+/* Side menu list */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 68px;
+}
+
+.side-menu ul li {
+    margin: 28px 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.side-menu ul li:hover {
+    color: #ddd;
+}
+
+
+
+/* Mobile  */
+
+@media screen and (max-width:768px) {
+    .header-container {
+        padding: 44px 24px;
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .logo img {
+        width: 107px;
+    }
+
+    /* .header-container {
+        padding: 44px 80px;
+    } */
+
+    .login-btn,
+    .music-logo {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .music-logo-phone {
+        display: block;
+        width: 24px;
+    }
+
+    .header-right {
+
+        gap: 24px;
+    }
+
+    .login-btn-mobile {
+        margin-top: 34px;
+
+    }
+
+}

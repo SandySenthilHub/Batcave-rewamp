@@ -1,0 +1,385 @@
+.ticket-new {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    /* width: 100vw; */
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.ticket {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+
+.ticket-blue {
+    width: 700px;
+    height: 300px;
+    background-image: url('../assets/ticket-mask.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.ticket-red {
+
+    background-image: url('../assets/ticket-mask-red.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 700px;
+    height: 300px;
+    margin-top: -255px;
+    margin-left: 206px;
+}
+
+.ticket-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket-left {
+    width: 14%;
+    padding: 20px;
+    writing-mode: vertical-lr;
+    text-align: start;
+}
+
+.Left-logo {
+    writing-mode: vertical-lr;
+    text-align: start;
+}
+
+.ticket-left-text {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.ticket-left-qr img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.ticket-header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.ticket-header-logo {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content-ticket {
+    margin-top: 20px;
+    margin-left: 11px;
+    height: 150px;
+}
+
+
+.ticket-header-logo img:first-child {
+    transform: rotate(90deg);
+    margin-top: 38px;
+
+}
+
+.ticket-right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.ticket-id {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Space Grotesk";
+    margin-top: 30px;
+    margin-bottom: 19.22px;
+
+}
+
+.ticket-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 14px;
+    font-family: "Outfit";
+}
+
+.ticket-qr img {
+    width: 70px;
+    height: 70px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.ticket-date {
+
+    font-size: 10px;
+    opacity: 60%;
+
+}
+
+
+/* Mobile Screen */
+@media screen and (max-width:768px) {
+
+    .ticket-blue {
+        height: 109px;
+        width: 189px;
+
+
+    }
+
+    .ticket-left {
+        padding: 0;
+    }
+
+    .ticket-header{
+        width: 110px;
+    }
+
+    .ticket-header-logo img:first-child {
+        margin-top: 20px;
+        margin-left: -2px;
+        width: 29px;
+    }
+
+    .ticket-header-logo img:nth-child(2) {
+
+        width: 17px;
+        margin-bottom: 5px;
+    }
+
+    .ticket-left-text {
+        font-size: 5px;
+    }
+
+    .left-content-ticket {
+        margin-top: 13px;
+    }
+
+    .ticket-right {
+        padding: 5px;
+        margin-left: 27px;
+        width: 125px;
+    }
+
+    .ticket-right img:first-child {
+        width: 40px;
+    }
+
+    .ticket-right img:nth-child(2) {
+        width: 20px;
+    }
+
+    .ticket-id {
+        font-size: 8px;
+        margin-top: 11px;
+        margin-bottom: 7.22px;
+    }
+
+    .ticket-details {
+        font-size: 6px;
+        gap: 1px;
+    }
+
+    .ticket-date {
+        font-size: 5px;
+
+    }
+
+    .ticket-red {
+        height: 109px;
+        width: 189px;
+
+        margin-top: -87px;
+        margin-left: 54px;
+    }
+
+
+
+}
+
+/* Tablet */
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .ticket-blue {
+        height: 149px;
+        width: 258px;
+    }
+
+    .ticket-left {
+        padding: 10px;
+    }
+
+    .ticket-header{
+        width: 147px;
+    }
+
+    .ticket-header-logo img:first-child {
+        margin-top: 20px;
+        margin-left: -2px;
+        width: 29px;
+    }
+
+    .ticket-header-logo img:nth-child(2) {
+
+        width: 17px;
+        margin-bottom: 5px;
+    }
+
+    .ticket-left-text {
+        font-size: 5px;
+    }
+
+    .left-content-ticket {
+        margin-top: 13px;
+    }
+
+    .ticket-right {
+        padding: 5px;
+        margin-left: 22px;
+        width: 125px;
+    }
+
+    .ticket-right img:first-child {
+        width: 50px;
+    }
+
+    .ticket-right img:nth-child(2) {
+        width: 28px;
+    }
+
+    .ticket-id {
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .ticket-details {
+        font-size: 10.5px;
+        gap: 4px;
+    }
+
+    .ticket-date {
+        font-size: 5px;
+
+    }
+
+    .ticket-red {
+        height: 149px;
+        width: 258px;
+        margin-top: -122px;
+        margin-left: 86px;
+
+    }
+
+
+
+}
+
+
+/* Laptop */
+@media screen and (min-width:1025px) and (max-width:1439px) {
+
+    .ticket-blue {
+        height: 167px;
+        width: 288px;
+    }
+
+    .ticket-left {
+        padding: 10px;
+    }
+
+    .ticket-header{
+        width: 162px;
+    }
+
+    .ticket-header-logo img:first-child {
+        margin-top: 20px;
+        margin-left: -2px;
+        width: 29px;
+    }
+
+    .ticket-header-logo img:nth-child(2) {
+
+        width: 28px;
+        margin-bottom: 5px;
+    }
+
+    .ticket-left-text {
+        font-size: 5px;
+    }
+
+    .left-content-ticket {
+        margin-top: 13px;
+    }
+
+    .ticket-right {
+        padding: 5px;
+        margin-left: 22px;
+        width: 125px;
+    }
+
+    .ticket-right img:first-child {
+        width: 58px;
+    }
+
+    .ticket-right img:nth-child(2) {
+        width: 48px;
+    }
+
+    .ticket-id {
+        font-size: 11px;
+        margin-top: 11px;
+        margin-bottom: 0;
+        width: 250px;
+    }
+
+    .ticket-details {
+        font-size: 9px;
+        gap: 4px;
+    }
+
+    .ticket-date {
+        font-size: 5px;
+
+    }
+
+    .ticket-red {
+        height: 167px;
+        width: 288px;
+        margin-top: -147px;
+        margin-left: 86px;
+
+    }
+
+
+
+}

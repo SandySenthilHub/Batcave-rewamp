@@ -1,0 +1,175 @@
+.plan-container {
+    display: flex;
+    gap: 36px;
+    overflow: scroll;
+    padding: 0px 17%;
+}
+
+.II-plan,
+.XR-plan,
+.OG-plan {
+    width: 700px;
+    height: 420px;
+    border: 0.2px solid #fff;
+    border-radius: 24px;
+    background-color: #0C0C0C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 93px;
+    color: #999999;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px 0 30px;
+}
+
+.II-plan {
+    background-image:
+        url('../../assets/card-shine.svg'),
+        url('../../assets/II-bg.png');
+}
+
+.XR-plan {
+    background-image:
+        url('../../assets/card-shine.svg'),
+        url('../../assets/XR-bg.png');
+}
+
+.OG-plan {
+    background-image:
+        url('../../assets/card-shine.svg'),
+        url('../../assets/OG-bg.png');
+}
+
+.plan-content {
+    width: 500px;
+}
+
+.plan-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-family: "BuiltTitling";
+    margin-bottom: -5px;
+    font-weight: 600;
+    letter-spacing: 2.2px
+}
+
+.plans-content {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.plan-price {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.membership-btn-plan {
+    margin-top: 24px;
+}
+
+.plan-img {
+    background-image: url('../../assets/XR-card-bg.svg');
+    width: 261px;
+    height: 160px;
+    margin-top: -50px;
+    margin-left: -12px;
+
+    /* background: linear-gradient(180deg, #FEE271 0%, rgba(174, 53, 48, 0) 86.35%); */
+
+}
+
+
+
+/* new */
+
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Add styles for the plan container and plan items */
+
+
+
+@media screen and (max-width:1024px) {
+
+    .II-plan,
+    .XR-plan,
+    .OG-plan {
+        width: 312px;
+        height: 592px;
+        flex-direction: column;
+
+    }
+
+    .plan-container {
+
+        /* margin-top: 13%; */
+        padding: 0px 8%;
+    }
+
+    .plan-img {
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 78px;
+    }
+
+    .plan-img img {
+        width: 217px;
+
+    }
+
+
+
+    .plan-content {
+        width: auto;
+        margin-top: 67px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1439px) {
+
+    .plan-container {
+
+        padding: 0px 12%;
+    }
+}
