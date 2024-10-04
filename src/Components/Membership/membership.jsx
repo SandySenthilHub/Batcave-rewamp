@@ -110,8 +110,7 @@ const Membership = () => {
                         membership plans
                     </div>
                     <div className='membership-content-title'>
-                        Batcave is the ultimate destination that any gearhead id looking for.
-                        Yes, it’s not for possession, but for passion.
+                    Get exclusive Batcave membership and enjoy massive perks—priority access, special offers, and ultimate privileges at all things within Batcave!
                     </div>
                     <div className='membership-btn'>
                         <Button

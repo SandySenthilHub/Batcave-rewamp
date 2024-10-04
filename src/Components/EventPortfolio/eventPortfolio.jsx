@@ -67,8 +67,7 @@ const EventPortfolio = () => {
                     automotive event management
                 </div>
                 <div className='EP-content'>
-                    Batcave is the ultimate destination that any gearhead id looking for.
-                    Yes, it’s not for possession, but for passion.
+                Experience top-tier automotive event management with Batcave—bringing thrilling car events, expert coordination, and unforgettable experiences to life!
                 </div>
 
                 <div className='EP-btn'>
